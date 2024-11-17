@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groceryStore>
+    <storeInfo>
+        <storeName>Био Магазин "Здраве"</storeName>
+        <location>
+            <city>София</city>
+            <address>бул. Витоша 15</address>
+        </location>
+        <contactNumber>+359 2 123 4567</contactNumber>
+    </storeInfo>
+    <categories>
+        <category>
+            <name>Плодове</name>
+            <subcategories>
+                <subcategory>
+                    <name>Цитрусови</name>
+                </subcategory>
+                <subcategory>
+                    <name>Тропически</name>
+                </subcategory>
+            </subcategories>
+        </category>
+        <category>
+            <name>Зеленчуци</name>
+        </category>
+    </categories>
+    <products>
+        <product productID="P001" available="true">
+            <productName>Ябълки</productName>
+            <categoryName>Плодове</categoryName>
+            <price>2.50</price>
+            <description>Свежи червени ябълки</description>
+            <nutritionalInformation>
+                <calories>52</calories>
+                <fats>0.2</fats>
+                <proteins>0.3</proteins>
+                <carbohydrates>14</carbohydrates>
+            </nutritionalInformation>
+        </product>
+        <product productID="P002" available="false">
+            <productName>Банани</productName>
+            <categoryName>Плодове</categoryName>
+            <price>3.20</price>
+            <description>Тропически банани</description>
+            <nutritionalInformation>
+                <calories>89</calories>
+                <fats>0.3</fats>
+                <proteins>1.1</proteins>
+                <carbohydrates>22.8</carbohydrates>
+            </nutritionalInformation>
+        </product>
+    </products>
+</groceryStore>

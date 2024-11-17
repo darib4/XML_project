@@ -1,0 +1,35 @@
+<!ELEMENT groceryStore (storeInfo, categories, products)>
+
+        <!-- Информация за магазина -->
+        <!ELEMENT storeInfo (storeName, location, contactNumber)>
+        <!ELEMENT storeName (#PCDATA)>
+        <!ELEMENT location (city, address)>
+        <!ELEMENT city (#PCDATA)>
+        <!ELEMENT address (#PCDATA)>
+        <!ELEMENT contactNumber (#PCDATA)>
+
+        <!-- Категории -->
+        <!ELEMENT categories (category*)>
+        <!ELEMENT category (name, subcategories?)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT subcategories (subcategory*)>
+        <!ELEMENT subcategory (name)>
+
+        <!-- Продукти -->
+        <!ELEMENT products (product*)>
+        <!ELEMENT product (productName, categoryName, price, description, nutritionalInformation)>
+        <!ATTLIST product
+                productID CDATA #REQUIRED
+                available (true | false) #IMPLIED>
+
+        <!ELEMENT productName (#PCDATA)>
+        <!ELEMENT categoryName (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+
+        <!-- Хранителна информация -->
+        <!ELEMENT nutritionalInformation (calories, fats, proteins, carbohydrates)>
+        <!ELEMENT calories (#PCDATA)>
+        <!ELEMENT fats (#PCDATA)>
+        <!ELEMENT proteins (#PCDATA)>
+        <!ELEMENT carbohydrates (#PCDATA)>
