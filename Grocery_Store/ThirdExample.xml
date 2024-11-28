@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="store.xsl"?>
+<groceryStore>
+    <storeInfo>
+        <storeName>Магазин "Напитки за всички"</storeName>
+        <location>
+            <city>Пловдив</city>
+            <address>ул. Дрин 5</address>
+        </location>
+        <contactNumber>+359 32 654 321</contactNumber>
+    </storeInfo>
+    <categories>
+        <category>
+            <name>Алкохолни напитки</name>
+        </category>
+        <category>
+            <name>Безалкохолни напитки</name>
+        </category>
+    </categories>
+    <products>
+        <product productID="P201" available="true">
+            <productName>Червено вино</productName>
+            <categoryName>Алкохолни напитки</categoryName>
+            <price>15.00</price>
+            <description>Френско червено вино с плодов вкус</description>
+            <nutritionalInformation>
+                <calories>85</calories>
+                <fats>0.0</fats>
+                <proteins>0.1</proteins>
+                <carbohydrates>2.7</carbohydrates>
+            </nutritionalInformation>
+        </product>
+        <product productID="P202" available="false">
+            <productName>Портокалов сок</productName>
+            <categoryName>Безалкохолни напитки</categoryName>
+            <price>3.50</price>
+            <description>100% натурален портокалов сок</description>
+            <nutritionalInformation>
+                <calories>45</calories>
+                <fats>0.0</fats>
+                <proteins>0.5</proteins>
+                <carbohydrates>11.0</carbohydrates>
+            </nutritionalInformation>
+        </product>
+    </products>
+</groceryStore>
