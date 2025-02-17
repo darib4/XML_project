@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="html/xsl" href="htmlTransform1.xsl"?>
+
+<groceryStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../XMLSchema/schema.xml">
+    <storeInfo>
+        <storeName>Зеленчуков Рай</storeName>
+        <location>
+            <city>Варна</city>
+            <address>ул. Морска градина 12</address>
+        </location>
+        <contactNumber>+359 700 123 456</contactNumber>
+    </storeInfo>
+    <inventory>
+        <category categoryID="cat3">
+            <categoryName>Зеленчуци</categoryName>
+            <product productID="prod4">
+                <productName>Краставици</productName>
+                <price>2.00</price>
+                <description>Свежи краставици, био продукция</description>
+            </product>
+            <product productID="prod5">
+                <productName>Моркови</productName>
+                <price>1.80</price>
+                <description>Хрупкави моркови от фермата</description>
+            </product>
+        </category>
+    </inventory>
+</groceryStore>

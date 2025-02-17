@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="html/xsl" href="htmlTransform1.xsl"?>
+
+<groceryStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../XMLSchema/schema.xml">
+    <storeInfo>
+        <storeName>Био Маркет</storeName>
+        <location>
+            <city>София</city>
+            <address>ул. Витошка 25</address>
+        </location>
+        <contactNumber>+359 876 543 210</contactNumber>
+    </storeInfo>
+    <inventory>
+        <category categoryID="cat2">
+            <categoryName>Млечни продукти</categoryName>
+            <product productID="prod3">
+                <productName>Краве сирене</productName>
+                <price>10.99</price>
+                <description>Българско краве сирене от ферма</description>
+            </product>
+        </category>
+    </inventory>
+</groceryStore>

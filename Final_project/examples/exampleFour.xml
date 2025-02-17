@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="html/xsl" href="htmlTransform1.xsl"?>
+
+<groceryStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../XMLSchema/schema.xml">
+    <storeInfo>
+        <storeName>Магазин "Златен клас"</storeName>
+        <location>
+            <city>Бургас</city>
+            <address>ул. Сливница 15</address>
+        </location>
+        <contactNumber>+359 889 321 654</contactNumber>
+    </storeInfo>
+    <inventory>
+        <category categoryID="cat4">
+            <categoryName>Зърнени храни</categoryName>
+            <product productID="prod6">
+                <productName>Ориз Басмати</productName>
+                <price>5.50</price>
+                <description>Качествен ориз Басмати 1kg</description>
+            </product>
+        </category>
+    </inventory>
+</groceryStore>

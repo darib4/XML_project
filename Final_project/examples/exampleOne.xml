@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="html/xsl" href="htmlTransform1.xsl"?>
+
+<groceryStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../XMLSchema/schema.xml">
+    <storeInfo>
+        <storeName>Магазин "Фермерски Продукти"</storeName>
+        <location>
+            <city>Пловдив</city>
+            <address>бул. България 100</address>
+        </location>
+        <contactNumber>+359 888 123 456</contactNumber>
+    </storeInfo>
+    <inventory>
+        <category categoryID="cat1">
+            <categoryName>Плодове</categoryName>
+            <product productID="prod1">
+                <productName>Ябълки</productName>
+                <price>2.50</price>
+                <description>Свежи червени ябълки</description>
+            </product>
+            <product productID="prod2">
+                <productName>Домат</productName>
+                <price>3.20</price>
+                <description>Домати сорт 'Розова магия'</description>
+            </product>
+        </category>
+    </inventory>
+</groceryStore>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Главен елемент за магазина -->
+    <xs:element name="groceryStore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="storeInfo" type="StoreInfoType"/>
+                <xs:element name="inventory" type="InventoryType"/>
+                <xs:element name="orders" type="OrdersType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Информация за магазина -->
+    <xs:complexType name="StoreInfoType">
+        <xs:sequence>
+            <xs:element name="storeName" type="xs:string"/>
+            <xs:element name="location" type="LocationType"/>
+            <xs:element name="contactNumber" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Локация на магазина -->
+    <xs:complexType name="LocationType">
+        <xs:sequence>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Склад (инвентар) -->
+    <xs:complexType name="InventoryType">
+        <xs:sequence>
+            <xs:element name="category" type="CategoryType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Категория продукти -->
+    <xs:complexType name="CategoryType">
+        <xs:sequence>
+            <xs:element name="categoryName" type="xs:string"/>
+            <xs:element name="product" type="ProductType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="categoryID" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <!-- Продукт -->
+    <xs:complexType name="ProductType">
+        <xs:sequence>
+            <xs:element name="productName" type="xs:string"/>
+            <xs:element name="price" type="xs:float"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="productID" type="xs:ID" use="required"/>
+        <xs:attribute name="organic" type="xs:boolean" use="optional"/>
+    </xs:complexType>
+
+    <!-- Поръчки -->
+    <xs:complexType name="OrdersType">
+        <xs:sequence>
+            <xs:element name="order" type="OrderType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Поръчка -->
+    <xs:complexType name="OrderType">
+        <xs:sequence>
+            <xs:element name="customerName" type="xs:string"/>
+            <xs:element name="contactNumber" type="xs:string"/>
+            <xs:element name="date" type="xs:date"/>
+            <xs:element name="itemsOrdered" type="ItemsOrderedType"/>
+        </xs:sequence>
+        <xs:attribute name="orderID" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <!-- Продукти в поръчка -->
+    <xs:complexType name="ItemsOrderedType">
+        <xs:sequence>
+            <xs:element name="item" type="ItemType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Продукт в поръчка -->
+    <xs:complexType name="ItemType">
+        <xs:sequence>
+            <xs:element name="quantity" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="productID" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

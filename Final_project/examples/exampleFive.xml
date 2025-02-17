@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="html/xsl" href="htmlTransform1.xsl"?>
+
+<groceryStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../XMLSchema/schema.xml">
+    <storeInfo>
+        <storeName>Магазин "Детска усмивка"</storeName>
+        <location>
+            <city>Русе</city>
+            <address>бул. Липник 77</address>
+        </location>
+        <contactNumber>+359 899 456 789</contactNumber>
+    </storeInfo>
+    <inventory>
+        <category categoryID="cat5">
+            <categoryName>Напитки</categoryName>
+            <product productID="prod7">
+                <productName>Ябълков сок</productName>
+                <price>3.00</price>
+                <description>Прясно изцеден ябълков сок 500ml</description>
+            </product>
+            <product productID="prod8">
+                <productName>Мляко</productName>
+                <price>2.50</price>
+                <description>Прясно краве мляко 1L</description>
+            </product>
+        </category>
+    </inventory>
+</groceryStore>
