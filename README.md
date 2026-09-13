@@ -1,2 +1,2 @@
 # XML_project
-XML project in FMI, first semester 2024 - 2025
+Final project for the XML course in FMI
